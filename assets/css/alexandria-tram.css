@@ -1,0 +1,67 @@
+/*Alexandria Tram Map Page Styling*/
+@import "style.css";
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 90px;
+    margin-bottom: 20px;
+}
+
+#alex-tram-map{
+    margin-left: 150px;
+}
+
+.toggle-btn:hover{
+    background-color: #ddd;
+}
+
+main .destination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+main .destination label{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+main .destination .from-selector{
+    display: flex;
+    gap: 10px;
+}
+
+main .destination .from-selector select{
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+main .destination .to-selector{
+    display: flex;
+    gap: 43px;
+}
+
+main .destination .to-selector select{
+    border-radius:5px;
+    border: 1px solid #ddd;
+}
+
+.after-result{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px){
+    main #alex-tram-map{
+        width: 290px;
+        margin-left: 100px;
+    }
+}

@@ -1,0 +1,45 @@
+@import "style.css";
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    position: relative;
+    top: 90px;
+    margin-bottom: 10px;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#cairo-metro-map{
+    margin-top: 20px;
+    width: 500px;
+}
+
+#cairo-metro-website{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#cairo-metro-website:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 768px){
+    #cairo-metro-map{
+        width: 100%;
+    }
+
+    .main-toggle{
+        min-height: 85vh;
+    }
+}

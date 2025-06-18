@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navigation-links {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navigation-links:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Hamburger Menu Styles */
+#toggle-menu {
+    display: none;
+}
+
+#hamburger-label {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+section{
+    padding: 10px 10px;
+}
+
+.btn{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    margin: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.toggle-btn{
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color:#007bff;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.toggle-btn:hover{
+    background-color: #ddd;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-shadow: center;
+    padding-bottom: 100px;
+}
+
+.card{
+    display: inline-block;
+    background-color: #fff;
+    width: 21.25em; 
+    box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    text-decoration: none;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.img-icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+    width: 100%
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.icons-container {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons {
+    color: #fff;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.social-icons:hover {
+    transform: translateY(-5px);
+    color: #3a6cf4;
+}
+
+.hidden {
+    display: none;
+}
+
+.active{
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    #hamburger-label {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    #toggle-menu:checked ~ nav {
+        display: flex;
+    }
+
+    .navigation-links {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        margin: 5px 0;
+    }
+
+    .navigation-links:hover {
+        background-color: rgba(0, 123, 255, 0.1);
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-title {
+        font-size: 1.1em;
+    }
+
+    .icons-container {
+        justify-content: center;
+    }
+
+    .card{
+        width: 15em;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+}

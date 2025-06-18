@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridely - Alexandria Tram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/alexandria-tram.css">
+</head>
+
+<body>
+    <header>
+        <a href = "index.html" class = "logo">Ridely</a>
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" id = "hamburger-label">&#9776;</label>
+        <nav>
+            <a href="contact.html" class = "navigation-links">Contact</a>
+            <a href="about.html" class = "navigation-links">About</a>
+            <a href="#" class = "navigation-links">Sign Up/Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Alexandria Tram</h2>
+        <img id = "alex-tram-map" src="assets/images/Alex Tram Map.jpeg" alt="Alexandria's Tram Map" title = "Alexandria's Tram Map"><br>
+        <button class = "toggle-btn"><i class="fa-solid fa-eye"></i></button>
+
+        <section class = "destination">
+            <div class = "from-selector">
+                <label>From: </label>
+                <select name = "from" id = "ride-from">
+                    <option value="victoria">Victoria</option>
+                    <option value="elSoyouf">El-Soyouf</option>
+                    <option value="sidiBeshr">Sidi Beshr</option>
+                    <option value="elSaraya">El-Saraya</option>
+                    <option value="louran">Louran</option>
+                    <option value="tharwat">Tharwat</option>
+                    <option value="zizenia">Zizenia</option>
+                    <option value="elFnoonElgmeela">El-Fnoon El-Gmeela</option>
+                    <option value="gleem">Gleem</option>
+                    <option value="sabaBasha">Saba Basha</option>
+                    <option value="elHadaya">El-Hadaya</option>
+                    <option value="bokla">Bokla</option>
+                    <option value="roushdy">Roushdy</option>
+                    <option value="mohamedMahfouz">Mohamed Mahfouz</option>
+                    <option value="mostafaKamel">Mostafa Kamel</option>
+                    <option value="sidiGaberElsheikh">Sidi Gaber El-Sheikh</option>
+                    <option value="sidiGaberElMhata">Sidi Gaber El-Mahata</option>
+                    <option value="cleopatraHamamat">Cleopatra El-Hamamat</option>
+                    <option value="zananeery">Zananeery (Cleopatra)</option>
+                    <option value="cleopatraElSokhra">Cleopatra El-Sokhra</option>
+                    <option value="sportingBig">Sporting El-Kobra</option>
+                    <option value="sportigSmall">Sporting El-Sokhra</option>
+                    <option value="elIbrahimeya">El-Ibrahimeya</option>
+                    <option value="campCizar">Camp Cizar</option>
+                    <option value="elGamaa">El-Gamaa</option>
+                    <option value="elShatby">El-Shatby</option>
+                    <option value="elShoban">El-Shoban El-Moslmeen</option>
+                    <option value="mostafaZyan">El-Shaheed Mostafa Zyan</option>
+                    <option value="elAzareeta">El-Azareeta</option>
+                    <option value="GameaIbrahim">Gamea Ibrahim</option>
+                    <option value ="sanStefano">San Stefano</option>
+                    <option value="Ganakleez">Ganakleez</option>
+                    <option value="bakoos">Bakoos</option>
+                    <option value="Flemeng">Flemeng</option>
+                    <option value="elWzara">El-Wzara</option>
+                </select>
+            </div>
+            
+            <div class = "to-selector">
+                <label>To: </label>
+                <select name="to" id="ride-to">
+                    <option value="victoria">Victoria</option>
+                    <option value="elSoyouf">El-Soyouf</option>
+                    <option value="sidiBeshr">Sidi Beshr</option>
+                    <option value="elSaraya">El-Saraya</option>
+                    <option value="louran">Louran</option>
+                    <option value="tharwat">Tharwat</option>
+                    <option value="zizenia">Zizenia</option>
+                    <option value="elFnoonElgmeela">El-Fnoon El-Gmeela</option>
+                    <option value="gleem">Gleem</option>
+                    <option value="sabaBasha">Saba Basha</option>
+                    <option value="elHadaya">El-Hadaya</option>
+                    <option value="bokla">Bokla</option>
+                    <option value="roushdy">Roushdy</option>
+                    <option value="mohamedMahfouz">Mohamed Mahfouz</option>
+                    <option value="mostafaKamel">Mostafa Kamel</option>
+                    <option value="sidiGaberElsheikh">Sidi Gaber El-Sheikh</option>
+                    <option value="sidiGaberElMhata">Sidi Gaber El-Mahata</option>
+                    <option value="cleopatraHamamat">Cleopatra El-Hamamat</option>
+                    <option value="zananeery">Zananeery (Cleopatra)</option>
+                    <option value="cleopatraElSokhra">Cleopatra El-Sokhra</option>
+                    <option value="sportingBig">Sporting El-Kobra</option>
+                    <option value="sportigSmall">Sporting El-Sokhra</option>
+                    <option value="elIbrahimeya">El-Ibrahimeya</option>
+                    <option value="campCizar">Camp Cizar</option>
+                    <option value="elGamaa">El-Gamaa</option>
+                    <option value="elShatby">El-Shatby</option>
+                    <option value="elShoban">El-Shoban El-Moslmeen</option>
+                    <option value="mostafaZyan">El-Shaheed Mostafa Zyan</option>
+                    <option value="elAzareeta">El-Azareeta</option>
+                    <option value="GameaIbrahim">Gamea Ibrahim</option>
+                    <option value ="sanStefano">San Stefano</option>
+                    <option value="Ganakleez">Ganakleez</option>
+                    <option value="bakoos">Bakoos</option>
+                    <option value="Flemeng">Flemeng</option>
+                    <option value="elWzara">El-Wzara</option>
+                </select>
+            </div>
+            <button class = "btn">Let's Go</button>
+            <p class = "result"></p>
+        </section>
+
+        <section class = "cards">
+            <a class = "card" href = "cairo-metro.html">
+                <div class="icon">
+                    <img class="img-icon" src = "assets/images/metro.png" alt = "Metro Icon" title = "Metro">
+                </div>
+                <div class="info">
+                    <h3>Cairo Metro</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+    
+    <footer class = "footer">
+        <p class="footer-title">Copyrights @<span>Amr Hassan</span></p>
+        <div class="icons-container">
+            <a href="https://www.linkedin.com/in/amr-hassan-5b96132ba/" class="social-icons" aria-label="LinkedIn Profile" title = "LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com"  class="social-icons" target = "_blank" aria-label = "Facebook Page" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCEdoI8g2kJw02Bre-BC1UKw" target="_blank" class="social-icons" aria-label ="YouTube Channel" title = "YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icons" aria-label = "Instagram Profile" title = "Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/amr-hassan01" target="_blank" class="social-icons" aria-label = "GitHub Profile" title = "GitHub"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
+
+    <script src = "assets/js/alexandria-tram.js"></script>
+</body>
+</html>

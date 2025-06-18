@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridely</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/cairo-metro.css">
+</head>
+
+<body>
+    <header>
+        <a href = "index.html" class = "logo">Ridely</a>
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" id = "hamburger-label">&#9776;</label>
+        <nav>
+            <a href="contact.html" class = "navigation-links">Contact</a>
+            <a href="about.html" class = "navigation-links">About</a>
+            <a href="#" class = "navigation-links">Sign Up/Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cairo Metro</h2>
+        <div class="container">
+            <img id="cairo-metro-map" src="assets/images/Cairo Metro Map.jpg" alt="Cairo's Metro Map"
+            title="Cairo's Metro Map">
+            <a href="https://cairometro.gov.eg/" target = "_blank" id = "cairo-metro-website">The Official Website For Cairo Metro</a>
+        </div>
+        <button class = "toggle-btn"><i class="fa-solid fa-eye"></i></button>
+        <section class = "cards">
+            <a class = "card" href = "alexandria-tram.html">
+                <div class="icon">
+                    <img class="img-icon" src = "assets/images/tram.png" alt = "Tram Icon" title = "Tram">
+                </div>
+                <div class="info">
+                    <h3>Alexandria Tram</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+    
+    <footer class = "footer">
+        <p class="footer-title">Copyrights @<span>Amr Hassan</span></p>
+        <div class="icons-container">
+            <a href="https://www.linkedin.com/in/amr-hassan-5b96132ba/" class="social-icons" aria-label="LinkedIn Profile" title = "LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com"  class="social-icons" target = "_blank" aria-label = "Facebook Page" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCEdoI8g2kJw02Bre-BC1UKw" target="_blank" class="social-icons" aria-label ="YouTube Channel" title = "YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icons" aria-label = "Instagram Profile" title = "Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/amr-hassan01" target="_blank" class="social-icons" aria-label = "GitHub Profile" title = "GitHub"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
+    <script src = "assets/js/cairo-metro.js"></script>
+</body> 
+</html>
